@@ -6,7 +6,7 @@ import streamlit as st
 model_path = "Heart_Disease_Model.pkl"
 data_path = "heart_disease.csv"
 
-model = pk.load(open(model_path))
+model = pk.load(open(model_path, "rb"))
 data = pd.read_csv(data_path)
 print(data)
 
